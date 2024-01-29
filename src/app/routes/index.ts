@@ -1,11 +1,12 @@
 import express from 'express';
+import { BlogRoutes } from '../modules/blog/blog.route';
 
 const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/',
-    route: ,
+    path: '/blog',
+    route: BlogRoutes,
   },
 ];
 
