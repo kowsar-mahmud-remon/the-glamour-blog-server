@@ -1,4 +1,4 @@
-import { Model, Schema, Types, model } from 'mongoose';
+import { Model, Schema, model } from 'mongoose';
 import { IComment } from './comment.interface';
 
 type CommentModel = Model<IComment, Record<string, unknown>>;
@@ -6,8 +6,7 @@ type CommentModel = Model<IComment, Record<string, unknown>>;
 const CommentSchema = new Schema<IComment>(
   {
     blogId: {
-      type: Types.ObjectId,
-      ref: 'Blog',
+      type: Number,
       required: true,
     },
     id: {
