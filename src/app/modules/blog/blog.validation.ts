@@ -2,8 +2,8 @@ import { z } from 'zod';
 
 const createBlogZodSchema = z.object({
   body: z.object({
-    blogId: z.number({
-      required_error: 'blogId is required',
+    userId: z.number({
+      required_error: 'userId is required',
     }),
 
     id: z.number({
